@@ -18,10 +18,12 @@ const Navbarcomp = () => {
             <Link to="/blog" className='nav-link ml-5'>Blog</Link>
             <Link to="/contact" className='nav-link ml-5'>Contact</Link>
           </Nav>
+          <div className='d-flex justify-content-end"'> 
+            <Link to="/login" className='nav-link'>Login</Link>&nbsp;/&nbsp;
+            <Link to="/register" className='nav-link'>Register</Link>
+          </div>
         </Navbar.Collapse>
-        <div className='d-flex justify-content-end"'> 
-        <Link to="/login" className='nav-link'>Login</Link>&nbsp;/&nbsp;<Link to="/register" className='nav-link'>Register</Link>
-        </div>
+
       </Container>
     </Navbar>
          </>
