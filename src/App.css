@@ -38,6 +38,259 @@
 }
 
 
+/* --------------------------------------------------------------------------------------------------------- */
+                                            /* BlogLogoStyling */
+.Blogstyling{
+  background: linear-gradient(135deg,#5F0F40,#310E68);
+  padding: 15px 10px;
+}                                            
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------- */
+                                            /* NavbarStyling */
+
+.StylingNavbar{
+  background:linear-gradient(100deg,#000000,#414141);
+}
+
+.linkstyle{
+  color: white;
+  font-size: 18px;
+  margin-left: 25px;
+  text-decoration: none;
+}
+.linkstyle:hover{
+  color:#8241B8;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+                                    /* RegistrationPage Styling */
+
+.maindiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  height: 88vh;
+  background:linear-gradient(100deg,#000000,#414141);
+}
+.RegisterationContainer{
+  /* border: 1px solid red; */
+  border-radius: 25px;
+  width: 600px;
+  height: 60vh;
+  padding: 20px;
+  background: linear-gradient(135deg,#5F0F40,#310E68);
+}
+
+.registerbutton{
+  /* border: none; */
+  width: 115px;
+  height: 37px;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: black;
+  color: white;
+  font-weight: 550;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.heading{
+  color: white;
+  font-size: 40px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.RegisterationInputs{
+  background-color: black;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  width: 200px;
+}
+
+.labels{
+  color: white;
+}
+
+.passwordlabel{
+  margin-right: 10px;
+}
+.Inputs{
+  margin-left: 20px;
+}
+.emailinput{
+  margin-left: 53px;
+}
+.passwordinput{
+  margin-left: 12px;
+}
+
+.confirmpasswordinput{
+  margin-right: 59px;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------------------------ */
+                                        /* Homepage */
+.Firstcontainer{
+  width: 100%;
+  height: 78vh;
+  margin-top: -16px;
+  /* border: 1px solid red; */
+  background-image: url('./images/Galaxy.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Firstcontainerchild{
+  width: 800px;
+  height: 150px;
+  /* border: 1px solid white; */
+  color: white;
+}
+
+.Homebutton{
+  margin-right: 550px;
+  margin-top: 50px;
+  width: 170px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.Contactuslink{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.Contactuslink:hover{
+  color: white;
+}
+
+.Secondcontainer{
+  width: 100%;
+  height: 120vh;
+  background: linear-gradient(100deg,#000000,#414141);
+  margin-top: 0px;
+  /* border: 1px solid red; */
+  border-radius: 3px;
+}
+.Ptag{
+  color: white;
+}
+
+.Blogheading{
+  color: white;
+}
+
+.Posts{
+  padding: 30px 60px;
+}
+
+.cardimages{
+  width: 50%;
+  height: 40vh;
+}
+.Continuereading{
+  width: 200px;
+  height: 50px;
+  background-color: #000000;
+  color: white;
+  font-size: 18px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.Footercontainer{
+  width: 100%;
+  height: 50vh;
+  /* border: 1px solid red; */
+  padding: 20px 50px ;
+  background: linear-gradient(100deg,#5F0F40,#310E68);
+}
+.Footercontainerchild{
+  /* width: 80%; */
+  height: 90px;
+  /* border: 1px solid navy; */
+  margin-top:20px ;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+
+}
+.footerlogo{
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid red; */
+  position: relative;
+}
+.footeraboutus{
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid red; */
+}
+.footeraboutus h4{
+  color: white;
+  font-size: 30px;
+}
+.footeraboutus span{
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+.usefullinks{
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid red; */
+}
+.usefullinks h4{
+  color: white;
+  font-size: 30px;
+}
+.use{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+.use:hover{
+  color: black;
+}
+.logofooter{
+  width: 200px;
+  height: 100px;
+  /* border: 1px solid red; */
+  position: absolute;
+  /* top: 10px; */
+  background: linear-gradient(135deg,#5F0F40,#310E68);
+}
+.logotext{
+  color: white;
+  margin-top: 27px;
+}
+.Copyright{
+  width: 100%;
+  height: 80px;
+  background:linear-gradient(100deg,#000000,#414141);
+}
+.Copyright p{
+  background-color:white;
+  color: #310E68;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+/* ------------------------------------------------------------------------------------------------------------ */
 
 /* @tailwind base;
 @tailwind components;
