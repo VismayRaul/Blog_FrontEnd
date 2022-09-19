@@ -1,6 +1,11 @@
-import { createContext, useState, UseEffect } from "react";
+import { createContext, useState, UseEffect, useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import jwt_decode from "jwt_decode";
 
-export default AuthenticateContext = createContext();
+
+const AuthenticateContext = createContext();
+
+export default AuthenticateContext;
 
 export const AuthProvider = ({ children }) =>{
     const [authTokens, setAuthTokens ] = useState(()=> 
@@ -19,8 +24,8 @@ export const AuthProvider = ({ children }) =>{
 
     const history = useHistory();
 
-    const logingUser = async (username, password) => {
-        const response = await fetch("api",{
+    const loging = async (username, password) => {
+        const response = await fetch("login api",{
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
@@ -32,6 +37,65 @@ export const AuthProvider = ({ children }) =>{
         });
         const data = await response.json();
 
-        
-    }
-}
+        if (response.status === 200){
+            setAuthTokens(data);
+            setUser(jwt_decode(data.access));
+            localStorage.setItem("authTokens",JSON.stringify(data));
+            history.push("/")
+        }
+        else{
+            alert("Something went wrong!");
+        }
+    };
+ 
+    const register = async(username, password, password2) =>{
+        const response = await fetch("register api",{
+            merthod:"POST",
+            headers:{
+                "context-Type":"application/json"
+            },
+            body: JSON.stringify({
+                username,
+                password,
+                password2
+            })
+        });
+
+        if (response.status === 201) {
+            history.push("/login");
+        }
+        else{
+            alert("Something went wrong!");
+        }
+    };
+
+    const logout = ()=>{
+        setAuthTokens(null);
+        setUser(null);
+        localStorage.removeItem("authTokens");
+        history.push("/")
+    };
+
+    const contextData = {
+        user,
+        setUser,
+        authTokens,
+        setAuthTokens,
+        register,
+        loging,
+        logout
+    };
+
+    useEffect(()=>{
+        if (authTokens){
+            setUser(jwt_decode(authTokens.access));
+        }
+        setLoading(false);
+    },[authTokens, loading]);
+
+    return(
+        <AuthenticateContext.Provider value={contextData}>
+            {loading ? null : children}
+        </AuthenticateContext.Provider>
+    )
+};
