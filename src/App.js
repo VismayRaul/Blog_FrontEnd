@@ -5,7 +5,9 @@ import Blogs from './components/Blogs';
 import Contacts from './components/Contacts';
 import Homepage from './components/Homepage';
 import UserRegister from './components/UserRegister';
+import Editprofile from './components/Editprofile';
 import UserLogin from './components/UserLogin.js';
+
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom' 
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
                    <Route path='/contact' element={<Contacts/>}></Route>
                    <Route path='/register' element={<UserRegister/>}></Route>
                    <Route path='/login' element={<UserLogin/>}></Route>
+                   <Route path='/edit' element={<Editprofile/>}></Route>
+
+                   
             </Routes>
       </Router>
     </div>

@@ -17,6 +17,7 @@ const Navbarcomp = () => {
             <Link to="/home" className=' ml-5 linkstyle'>Home</Link>
             <Link to="/blog" className=' ml-5 linkstyle'>Blog</Link>
             <Link to="/contact" className=' ml-5 linkstyle'>Contact</Link>
+            <Link to="/edit" className=' ml-5 linkstyle'>Editprofile</Link>
           </Nav>
           <div className='d-flex justify-content-end '> 
             <Link to="/login" className=' linkstyle'>Login</Link>&nbsp;/&nbsp;
